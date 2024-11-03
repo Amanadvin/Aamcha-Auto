@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About_us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      overflow: auto;
+
+    }
+
+    .logo {
+      width: 20%;
+      /* Adjust the size as needed */
+      margin-right: 550px;
+      height: 40px;
+      margin-left: 30px;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: rgb(117, 186, 137);
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* .nav-links a:hover {
+    text-decoration: underline;
+} */
+
+
+
+
+    nav a {
+      color: #025409;
+      position: relative;
+
+      text-decoration: none;
+
+      transition: .5s;
+      font-style: 'poppins', sans-serif;
+    }
+
+    nav a:hover {
+      color: #ff0000;
+
+
+    }
+
+
+    nav a:hover span {
+      transform: scale(1) translate(0px);
+      opacity: 1;
+    }
+
+    .box img {
+      width: 100%;
+      height: 120%;
+      margin-top: 4.5%;
+
+
+    }
+
+    .about-section {
+      background-color: #f7f7f7;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about-section h1 {
+      font-size: 36px;
+      color: #ff8c00;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #666;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .feature-item {
+      max-width: 250px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature-item i {
+      font-size: 40px;
+      color: #ff8c00;
+      margin-bottom: 15px;
+    }
+
+    .feature-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .feature-item p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .store a:hover {
+      color: #1207ad;
+      background-color: rgb(170, 206, 11);
+      border-radius: 10px;
+      width: 200px;
+    }
+
+    .about2 {
+      margin: 10px;
+      background-color: #dfede1;
+      width: auto;
+      height: 560px;
+    }
+
+    .about2 p {
+      margin-left: 50px;
+      font-size: larger;
+      width: 800px;
+      color: #1207ad;
+      font-style: italic;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .about2 h1 {
+      margin-left: 850px;
+      font-size: 50px;
+      margin-top: 100px;
+    }
+
+    .about2 h3 {
+      margin-left: 500px;
+      font-size: larger;
+      width: 800px;
+      color: #1207ad;
+      font-style: italic;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      max-width: 1200px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .footer-links ul,
+    .footer-social ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links a,
+    .footer-social a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover,
+    .footer-social a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #222;
+    }
+
+    .footimg img {
+      height: 200px;
+      width: 200px;
+      margin-left: 40%;
+      margin-top: 0;
+    }
+
+    .footimg2 img {
+      height: 70px;
+      width: 400px;
+
+      margin-left: 35%;
+      /* margin-top: -80px; */
+    }
+
+    .term {
+      /* text-align: center; */
+      /* justify-content: center; */
+      color: white;
+      margin-top: 12px;
+      margin: 10px;
+    }
+
+    .term a:hover {
+      color: #11a222;
+    }
+  </style>
+
+  
+
+   
+
+<body>
+  <nav class="navbar">
+    <img src="MAPAUTO-removebg-preview.png" alt="Logo" class="logo">
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.eevv.riderApp">Download the App</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="about-section">
+    <h1>About Us</h1>
+    <p>Welcome to AamchaAuto Rides! We offer a fun, affordable, and eco-friendly way to explore the city. Our mission is
+      to provide safe and memorable rides through iconic spots and hidden gems alike. Hop on and let us show you around!
+    </p>
+
+    <div class="features">
+      <div class="feature-item">
+        <i class="fas fa-bullseye"></i>
+        <h3>Our Mission</h3>
+        <p>To make city exploration easy, safe, and exciting with our reliable and eco-friendly rides.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-map-signs"></i>
+        <h3>Local Guides</h3>
+        <p>Our drivers know the city inside-out and are happy to share insider tips on must-visit spots.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-leaf"></i>
+        <h3>Eco-Friendly Rides</h3>
+        <p>Our autorickshaws are fuel-efficient, reducing emissions and supporting sustainable tourism.</p>
+      </div>
+    </div>
+    <div class="self-center">
+      <h1 class="mb-2 text-open-data-color-1 xl:text-[3.125rem] md:text-5xl text-[2rem] font-bold md:leading-max">
+        Aamcha-Auto App<br></h1>
+      <hr class="h-2.5 bg-open-data-drivers-earnings-card opacity-50  w-32">
+      <p
+        class="mt-12 pt-1 xl:leading-9 text-open-data-color-10 font-light 2xl:text-[1.625rem] xl:text-[1.4rem] text-xl whitespace-pre-line">
+        Aamcha-Auto is an open network mobility application built with the idea to provide multi-modal service to the
+        commuters without the involvement of any middlemen. This application is built on the common network standards
+        defined by ONDC built on the Beckn protocol (open source). The common network standards allows for
+        interoperability for any buyer app compliant with the network standards to offer rides</p>
+    </div>
+    <div class="store">
+
+      <a style="text-decoration: none; height: 200px; "
+        https://play.google.com/store/apps/details?id=com.eevv.riderApp">Download the App </a>
+    </div>
+  </section>
+  <div class="about2">
+    <span>
+      <img height="100px" src="MAPAUTO-removebg-preview.png">
+    </span>
+
+    <p>Aamcha Auto is the 1st app in India with ZERO Commission & ZERO surge charges. While removing the need of
+      middlemen, Aamcha Auto is a win-win for both the riders and the drivers. It's an ideology to increase the income
+      of auto drivers via cutting the commission and decrease the hassle for the riders and make it pocket friendly for
+      both of them.</p>
+
+    <h1>
+      What We provide ?
+
+    </h1>
+    <h3>
+      We provide a convenient and efficient solution that connects users with nearby auto-rickshaw drivers for
+      transportation services. This app serves as a platform where users can easily book, track, and pay for auto rides
+      through their smartphones. Here's a detailed description of the features found in Aamcha Auto:
+    </h3>
+
+  </div>
+  <div>
+
+
+    <footer>
+
+
+      <div class="footimg">
+        <img src="autoo.png" alt="autoo">
+
+      </div>
+      <div class="footimg2">
+
+        <img src="Whiteauto2.jpg" alt="autoo">
+      </div>
+      <div class="footer-container">
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.eevv.riderApp">Download The App</a></li>
+  
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: <a href="support@aamchaauto.com">support@aamchaauto.com</a></p>
+          <p>Phone: <a href="tel:+919272091200">+919272091200</a></p>
+          <p>Address: Electronic Sadan - 3, MIDC, Bhosari, Pune, Maharashtra - 411026
+          </p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="https://www.facebook.com"
+                target="https://www.facebook.com/people/Aamcha-Auto/61554147556106/?mibextid=ZbWKwL">Facebook</a>
+            </li>
+            <li><a href="https://www.instagram.com"
+                target="https://www.instagram.com/aamcha_auto/?igsh=MXJjNWg1czBjNTNjaA%3D%3D#">Instagram</a>
+            </li>
+            <li><a href="https://www.twitter.com"
+                target="https://x.com/AamchaAuto/status/1746071068278940093">Twitter</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 AamchaAuto. All rights reserved.</p>
+      </div>
+      <div class="term">
+        <a href="privacy.html" target="_blank"> Privacy Policy</a> |
+        <a href="termsaamcha.html" target="_blank">Terms & Condition</a>
+        </p>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

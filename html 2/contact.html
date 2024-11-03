@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+    }
+
+    .logo {
+      margin-right: auto;
+      height: 40px;
+      margin-left: 30px;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: rgb(117, 186, 137);
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.5s;
+    }
+
+    .nav-links a:hover {
+      color: #ff0000;
+    }
+
+    /* body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding-top: 70px; /* Account for fixed navbar */
+    /* background-color: #f4f4f9; */
+    /* }  */
+
+    .contact-section {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      /* position: fixed; */
+      justify-content: center;
+      justify-items: center;
+      margin-top: 90px;
+      margin-left: 38%;
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-section label {
+      font-size: 0.9em;
+      color: #333;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    .contact-section textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contact-section button {
+      width: 100%;
+      padding: 10px;
+      background-color: #5b9bd5;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .contact-section button:hover {
+      background-color: #4a8ac6;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .nav-links li {
+        margin: 0 8px;
+      }
+
+      .nav-links a {
+        font-size: 16px;
+      }
+
+      .contact-section {
+        max-width: 90%;
+      }
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      margin-top: 0%;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      max-width: 1200px;
+      margin: 0 auto;
+      cursor: pointer;
+      /* margin-top: 60%; */
+    }
+
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .footer-links ul,
+    .footer-social ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links a,
+    .footer-social a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover,
+    .footer-social a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #222;
+    }
+
+    .footimg img {
+      height: 200px;
+      width: 200px;
+      margin-left: 40%;
+      margin-top: 0;
+    }
+
+    .footimg2 img {
+      height: 70px;
+      width: 400px;
+
+      margin-left: 35%;
+      /* margin-top: -80px; */
+    }
+
+    #term{
+    /* text-align: center; */
+    /* justify-content: center; */
+    color: #11a222;
+    margin-top: 12px;
+    margin: 10px;
+}
+#term a:hover{
+    color: #11a222;
+}
+
+    /* Stack footer items vertically on smaller screens */
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <img src="MAPAUTO-removebg-preview.png" alt="Logo" class="logo">
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.eevv.riderApp" target="_blank">Download the App</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="/submit_contact" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+
+
+    <div class="footimg">
+      <img src="autoo.png" alt="autoo">
+
+    </div>
+    <div class="footimg2">
+
+      <img src="Whiteauto2.jpg" alt="autoo">
+    </div>
+    <div class="footer-container">
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.eevv.riderApp">Download The App</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="support@aamchaauto.com">support@aamchaauto.com</a></p>
+        <p>Phone: <a href="tel:+919272091200">+919272091200</a></p>
+        <p>Address: Electronic Sadan - 3, MIDC, Bhosari, Pune, Maharashtra - 411026
+        </p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/people/Aamcha-Auto/61554147556106/?mibextid=ZbWKwL"
+              target="https://www.facebook.com/people/Aamcha-Auto/61554147556106/?mibextid=ZbWKwL">Facebook</a>
+          </li>
+          <li><a href="https://www.instagram.com/aamcha_auto/?igsh=MXJjNWg1czBjNTNjaA%3D%3D#"
+              target="https://www.instagram.com/aamcha_auto/?igsh=MXJjNWg1czBjNTNjaA%3D%3D#">Instagram</a>
+          </li>
+          <li><a href="https://x.com/AamchaAuto/status/1746071068278940093"
+              target="https://x.com/AamchaAuto/status/1746071068278940093">Twitter</a></li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 AamchaAuto. All rights reserved.</p>
+    </div>
+    <div id="term">
+      <a href="privacy.html" target="_blank"> Privacy Policy</a> |
+      <a href="termsaamcha.html" target="_blank">Terms & Condition</a>
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>
